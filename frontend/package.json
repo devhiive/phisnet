@@ -1,0 +1,18 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend for phisnet using htmx and less. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"css/*.css, *.html, js/*.js\"",
+    "watch": "less-watch-compiler less css index.less"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "http-server": "^14.1.1",
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  }
+}
