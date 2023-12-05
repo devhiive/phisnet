@@ -21,7 +21,7 @@ fn idtest(id: usize) -> String {
 #[launch]
 fn rocket() -> _ {
     let allowed_origins = AllowedOrigins::some_exact(&[
-        "http://localhost:3000", "https://hiive.github.io"]);
+        "http://localhost:3000", "https://devhiive.github.io"]);
     let cors = rocket_cors::CorsOptions {
         allowed_origins,
         allowed_methods: vec![Method::Get].into_iter().map(From::from).collect(),
